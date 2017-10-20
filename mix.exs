@@ -7,7 +7,10 @@ defmodule TelegramBot.Mixfile do
       version: "0.1.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
-      deps: deps()
+      deps: deps(),
+      source_url: "https://github.com/chenxsan/TelegramBot",
+      description: description(),
+      package: package()
     ]
   end
 
@@ -23,6 +26,20 @@ defmodule TelegramBot.Mixfile do
     [
       {:httpoison, "~> 0.13"},
       {:poison, "~> 3.1"}
+    ]
+  end
+
+  defp description() do
+    "Telegram Bot API wrapper for elixir"
+  end
+
+  defp package() do
+    [
+      name: "TelegramBot",
+      source_url: "https://github.com/chenxsan/TelegramBot",
+      licenses: ["MIT"],
+      maintainers: ["Sam Chen"],
+      links: %{"GitHub" => "https://github.com/chenxsan/TelegramBot"}
     ]
   end
 end
