@@ -36,7 +36,7 @@ defmodule TelegramBot.Mixfile do
 
   defp package() do
     [
-      name: "TelegramBot",
+      name: "telegram_bot",
       source_url: "https://github.com/chenxsan/TelegramBot",
       licenses: ["MIT"],
       maintainers: ["Sam Chen"],
