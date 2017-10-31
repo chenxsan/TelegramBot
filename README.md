@@ -1,6 +1,6 @@
 # TelegramBot
 
-A simple Elixir wrapper for telegram bot api.
+A simple [Telegram Bot API](https://core.telegram.org/bots/api#available-methods) wrapper for elixir.
 
 ## Installation
 
@@ -14,4 +14,8 @@ def deps do
 end
 ```
 
+## Methods supported
+
+1. `getMe`
+2. `sendMessage`
 
