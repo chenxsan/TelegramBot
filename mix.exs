@@ -25,7 +25,7 @@ defmodule TelegramBot.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 0.13"},
-      {:poison, "~> 3.1"},
+      {:jason, "~> 1.0"},
       {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
