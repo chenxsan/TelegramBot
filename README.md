@@ -18,4 +18,5 @@ end
 
 1. `getMe`
 2. `sendMessage`
+3. `getFile`
 
