@@ -9,7 +9,7 @@ defmodule TelegramBot do
   A simple method for testing your bot's auth token. Requires no parameters. Returns basic information about the bot in form of a User object.
   """
 
-  @type telegram_response :: {:ok, map} | {:error, String.t()}
+  @type telegram_response :: {:ok, map} | {:error, {atom, String.t()}}
 
   @spec getMe() :: telegram_response
   def getMe do

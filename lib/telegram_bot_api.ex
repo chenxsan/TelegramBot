@@ -54,13 +54,13 @@ defmodule TelegramBot.API do
            "description" => reason
          }
        }} ->
-        {:error, reason}
+        {:error, {:telegram, reason}}
 
       {:error,
        %HTTPoison.Error{
          reason: reason
        }} ->
-        {:error, reason}
+        {:error, {:httpoison, reason}}
     end
   end
 
@@ -70,7 +70,7 @@ defmodule TelegramBot.API do
   end
 
   def http(action, data) do
-    post(action, data, [{"Content-Type", "application/json"}], [])
+    post(action, data, [{"Content-Type", "application/json"}], [timeout: 50_000, recv_timeout: 50_000])
     |> handle_response
   end
 end
