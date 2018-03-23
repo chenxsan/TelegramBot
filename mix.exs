@@ -4,7 +4,7 @@ defmodule TelegramBot.Mixfile do
   def project do
     [
       app: :telegram_bot,
-      version: "0.1.3",
+      version: "1.0.0",
       elixir: "~> 1.4",
       start_permanent: Mix.env == :prod,
       deps: deps(),
